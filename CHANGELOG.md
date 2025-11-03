@@ -2,12 +2,7 @@
 
 ## 3.36.0
 
-### Minor Changes
-
 - 42de7c8: Hicap api integration as provider
-
-### Patch Changes
-
 - 9abf2f5: Fix empty content field issue
 - 261a7dd: fix: enable Add Header button in OpenAICompatibleProvider UI
 - 05213f2: Remove orphaned tool_results after truncation
