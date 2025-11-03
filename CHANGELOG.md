@@ -1,5 +1,18 @@
 # Changelog
 
+## 3.36.0
+
+### Minor Changes
+
+- 42de7c8: Hicap api integration as provider
+
+### Patch Changes
+
+- 9abf2f5: Fix empty content field issue
+- 261a7dd: fix: enable Add Header button in OpenAICompatibleProvider UI
+- 05213f2: Remove orphaned tool_results after truncation
+- c7afb61: Fix: render model description in markdown
+
 ## 3.35.0
 
 - Add native tool calling support with configurable setting.
