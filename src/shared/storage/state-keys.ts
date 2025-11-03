@@ -43,6 +43,7 @@ export interface GlobalState {
 	lastDismissedInfoBannerVersion: number
 	lastDismissedModelBannerVersion: number
 	lastDismissedCliBannerVersion: number
+	nativeToolCallEnabled: boolean
 }
 
 export interface Settings {
@@ -106,9 +107,11 @@ export interface Settings {
 	difyBaseUrl: string | undefined
 	autoCondenseThreshold: number | undefined // number from 0 to 1
 	ocaBaseUrl: string | undefined
+	minimaxApiLine: string | undefined
 	ocaMode: string | undefined
 	hooksEnabled: boolean
 	subagentsEnabled: boolean
+	hicapModelId: string | undefined
 
 	// Plan mode configurations
 	planModeApiProvider: ApiProvider
@@ -142,6 +145,8 @@ export interface Settings {
 	planModeHuaweiCloudMaasModelInfo: ModelInfo | undefined
 	planModeOcaModelId: string | undefined
 	planModeOcaModelInfo: OcaModelInfo | undefined
+	planModeHicapModelId: string | undefined
+	planModeHicapModelInfo: ModelInfo | undefined
 	// Act mode configurations
 	actModeApiProvider: ApiProvider
 	actModeApiModelId: string | undefined
@@ -178,6 +183,8 @@ export interface Settings {
 	actModeVercelAiGatewayModelInfo: ModelInfo | undefined
 	actModeOcaModelId: string | undefined
 	actModeOcaModelInfo: OcaModelInfo | undefined
+	actModeHicapModelId: string | undefined
+	actModeHicapModelInfo: ModelInfo | undefined
 
 	// OpenTelemetry configuration
 	openTelemetryEnabled: boolean
@@ -235,6 +242,8 @@ export interface Secrets {
 	difyApiKey: string | undefined
 	ocaApiKey: string | undefined
 	ocaRefreshToken: string | undefined
+	minimaxApiKey: string | undefined
+	hicapApiKey: string | undefined
 }
 
 export interface LocalState {
