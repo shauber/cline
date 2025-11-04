@@ -116,6 +116,8 @@ async function copyCliBinaries() {
 		{ os: "darwin", arch: "amd64" },
 		{ os: "linux", arch: "amd64" },
 		{ os: "linux", arch: "arm64" },
+		{ os: "openbsd", arch: "amd64" },
+		{ os: "openbsd", arch: "arm64" },
 	]
 
 	const binDir = path.join(BUILD_DIR, "bin")
@@ -396,7 +398,7 @@ function setupBinaries() {
 	if (!fs.existsSync(clineSource)) {
 		console.error(\`Error: Binary not found for platform \${platformSuffix}\`);
 		console.error(\`Expected: \${clineSource}\`);
-		console.error(\`Supported platforms: darwin-arm64, darwin-amd64, linux-amd64, linux-arm64\`);
+		console.error(\`Supported platforms: darwin-arm64, darwin-amd64, linux-amd64, linux-arm64, openbsd-amd64, openbsd-arm64\`);
 		process.exit(1);
 	}
 	

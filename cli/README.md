@@ -40,7 +40,7 @@ This will start the Cline CLI interface where you can interact with the autonomo
 ## Requirements
 
 -   Node.js 18.0.0 or higher
--   Supported platforms: macOS, Linux. Windows soon
+-   Supported platforms: macOS, Linux, OpenBSD. Windows soon
 -   Supported architectures: x64, arm64
 
 ## Configuration
