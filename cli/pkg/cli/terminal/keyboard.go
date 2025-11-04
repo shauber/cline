@@ -205,7 +205,7 @@ func getVSCodeConfigPath() (string, error) {
 			appData = filepath.Join(home, "AppData", "Roaming")
 		}
 		return filepath.Join(appData, "Code", "User"), nil
-	default: // linux, freebsd, etc.
+	default: // linux, freebsd, openbsd, etc.
 		return filepath.Join(home, ".config", "Code", "User"), nil
 	}
 }
@@ -226,7 +226,7 @@ func getCursorConfigPath() (string, error) {
 			appData = filepath.Join(home, "AppData", "Roaming")
 		}
 		return filepath.Join(appData, "Cursor", "User"), nil
-	default: // linux, freebsd, etc.
+	default: // linux, freebsd, openbsd, etc.
 		return filepath.Join(home, ".config", "Cursor", "User"), nil
 	}
 }
