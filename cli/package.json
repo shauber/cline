@@ -57,6 +57,6 @@
         "open": "^10.1.2",
         "vscode-uri": "^3.1.0"
     },
-    "os": ["darwin", "linux"],
+    "os": ["darwin", "linux", "openbsd"],
     "cpu": ["x64", "arm64"]
 }

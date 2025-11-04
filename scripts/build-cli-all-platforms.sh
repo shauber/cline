@@ -29,6 +29,8 @@ PLATFORMS=(
   "darwin/amd64"
   "linux/amd64"
   "linux/arm64"
+  "openbsd/amd64"
+  "openbsd/arm64"
 )
 
 # Build binaries for all platforms
