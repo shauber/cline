@@ -40,8 +40,30 @@ This will start the Cline CLI interface where you can interact with the autonomo
 ## Requirements
 
 -   Node.js 18.0.0 or higher
--   Supported platforms: macOS, Linux. Windows soon
+-   Supported platforms: macOS, Linux, OpenBSD. Windows soon
 -   Supported architectures: x64, arm64
+
+### OpenBSD
+
+On OpenBSD, you'll need to install ripgrep separately using the package manager:
+
+```bash
+doas pkg_add ripgrep
+```
+
+**For building from source on OpenBSD:**
+
+```bash
+# Install build dependencies
+doas pkg_add go node ripgrep
+
+# Clone and build
+git clone https://github.com/cline/cline
+cd cline
+npm run install:all
+npm run compile-standalone
+npm run compile-cli
+```
 
 ## Configuration
 

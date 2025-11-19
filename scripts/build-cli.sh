@@ -11,7 +11,7 @@ cp package.json dist-standalone/extension
 CORE_VERSION=$(node -p "require('./package.json').version")
 CLI_VERSION=$(node -p "require('./cli/package.json').version")
 COMMIT=$(git rev-parse --short HEAD 2>/dev/null || echo "unknown")
-DATE=$(date -u '+%Y-%m-%dT%H:%M:%SZ')
+DATE=$(date -u +%Y-%m-%dT%H:%M:%SZ)
 BUILT_BY="${USER:-unknown}"
 
 # Build ldflags to inject version info
